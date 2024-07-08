@@ -1,4 +1,4 @@
-if SHIELD_DIY12
+if SHIELD_DIY13
 
 config ZMK_KEYBOARD_NAME
     default "diy13"
