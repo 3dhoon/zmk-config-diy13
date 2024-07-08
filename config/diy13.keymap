@@ -24,7 +24,7 @@
             quick-tap-ms = <QUICK_TAP_MS>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <27 28 31 32 26 25 33 34>;
+            hold-trigger-key-positions = <27 28 33 34 29 30 35 36>;
             hold-trigger-on-release;
         };
     };
@@ -34,7 +34,7 @@
 
         lang_change {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <55 56>;
+            key-positions = <57 58>;
         };
     };
 
@@ -43,81 +43,81 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp N1          &kp N2                      &kp N3                 &kp N4       &kp N5      &kp N6      &kp N7       &kp N8            &kp N9           &kp N0                  &kp C_PLAY_PAUSE    &kp N1
-&kp TAB         &kp Q           &kp W                       &kp E                  &kp R        &kp T       &kp Y       &kp U        &kp I             &kp O            &kp P                   &kp LBKT            &kp RBKT
-&mt LCTRL CAPS  &hm LEFT_GUI A  &hm LEFT_ALT S              &hm LEFT_SHIFT D       &hm LCTRL F  &kp G       &kp H       &hm LCTRL J  &hm LEFT_SHIFT K  &hm LEFT_ALT L   &hm LEFT_GUI SEMICOLON  &kp SQT
-&none           &kp LSHFT       &kp Z                       &kp X                  &kp C        &kp V       &kp B       &kp N        &kp M             &kp COMMA        &kp DOT                 &kp FSLH            &kp N1
-&none           &kp LEFT_GUI    &mt LEFT_ALT C_VOL_DN       &lt 1 DEL              &none        &lt 2 BSPC  &lt 3 RET   &lt 4 SPACE  &none             &lt 2 RIGHT_ALT  &lt 5 LEFT              &kp RIGHT           &kp N1
+&kp ESC         &kp N1          &kp N2          &kp N3            &kp N4       &kp N5      &kp N6     &kp N7       &kp N8            &kp N9          &kp N0                  &kp C_VOL_DN  &kp C_VOL_UP
+&kp TAB         &kp Q           &kp W           &kp E             &kp R        &kp T       &kp Y      &kp U        &kp I             &kp O           &kp P                   &kp LBKT      &kp RBKT
+&mt LCTRL CAPS  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G       &kp H      &hm LCTRL J  &hm LEFT_SHIFT K  &hm LEFT_ALT L  &hm LEFT_GUI SEMICOLON  &kp SQT
+&none           &kp LSHFT       &kp Z           &kp X             &kp C        &kp V       &kp B      &kp N        &kp M             &kp COMMA       &kp DOT                 &kp FSLH      &kp C_PLAY_PAUSE
+&none           &kp LEFT_GUI    &kp LEFT_ALT    &lt 1 DEL         &none        &lt 2 BSPC  &lt 3 RET  &lt 4 SPACE  &none             &lt 2 LEFT      &lt 5 DOWN              &kp UP        &kp RIGHT
             >;
         };
 
         number_layer {
             bindings = <
-&trans  &trans  &kp F10  &kp F11  &kp F12  &trans  &trans  &trans           &trans           &trans           &trans           &trans
-&trans  &trans  &kp F7   &kp F8   &kp F9   &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &trans
-&trans  &trans  &kp F4   &kp F5   &kp F6   &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans           &trans
-&none   &trans  &trans   &kp F1   &kp F2   &kp F3  &trans  &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
-&none   &trans  &trans   &trans   &trans   &trans  &none   &trans           &kp KP_NUMBER_0  &trans           &trans           &trans
+&trans  &trans  &kp F10  &kp F11  &kp F12  &trans           &trans           &trans           &trans           &trans  &trans  &trans  &trans
+&trans  &kp F7  &kp F8   &kp F9   &trans   &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans  &trans  &trans
+&kp F4  &kp F5  &kp F6   &trans   &trans   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans           &trans  &none   &trans
+&trans  &kp F1  &kp F2   &kp F3   &trans   &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &none   &trans  &trans
+&trans  &trans  &trans   &none    &trans   &kp KP_NUMBER_0  &trans           &trans           &trans
             >;
         };
 
         nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans         &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LEFT)  &kp UP_ARROW  &kp LC(RIGHT)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp LEFT      &kp DOWN      &kp RIGHT      &kp END   &trans
-&none   &trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp PG_UP     &kp PAGE_DOWN  &kp UP    &trans
-&none   &trans  &trans  &trans  &trans  &trans  &none     &trans        &trans        &trans         &kp DOWN  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans         &trans         &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &kp LC(LEFT)  &kp UP_ARROW   &kp LC(RIGHT)  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp HOME  &kp LEFT  &kp DOWN      &kp RIGHT      &kp END        &trans  &none   &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &kp PG_UP     &kp PAGE_DOWN  &kp UP         &trans  &none   &trans  &trans
+&trans  &trans  &trans  &none   &trans    &trans    &trans        &kp DOWN       &trans
             >;
         };
 
         func_layer {
             bindings = <
-&trans  &trans  &trans      &trans      &trans  &trans       &trans  &trans  &trans  &trans  &trans  &kp LG(LS(S))
-&trans  &none   &none       &none       &none   &none        &none   &none   &none   &none   &none   &trans
-&trans  &none   &none       &none       &none   &none        &none   &none   &none   &none   &none   &trans
-&none   &none   &none       &none       &none   &none        &none   &none   &none   &none   &trans  &trans
-&none   &trans  &kp C_PREV  &kp C_NEXT  &trans  &bootloader  &none   &trans  &trans  &trans  &tog 7  &tog 6
+&trans      &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LS(S))  &trans
+&none       &none   &none        &none   &none   &none   &none   &none   &none   &none   &trans  &trans         &none
+&none       &none   &none        &none   &none   &none   &none   &none   &none   &trans  &none   &none
+&none       &none   &none        &none   &none   &none   &none   &none   &trans  &trans  &none   &trans         &kp C_PREV
+&kp C_NEXT  &trans  &bootloader  &none   &trans  &trans  &trans  &tog 7  &tog 6
             >;
         };
 
         symbol_layer {
             bindings = <
-&trans  &trans     &trans     &trans    &trans    &trans     &trans     &trans    &trans     &trans     &trans     &trans
-&trans  &kp GRAVE  &kp EXCL   &kp AT    &kp HASH  &kp DLLR   &kp CARET  &kp AMPS  &kp BSLH   &kp PIPE   &kp PRCNT  &trans
-&trans  &kp UNDER  &kp EQUAL  &kp LPAR  &kp RPAR  &kp APOS   &kp EQUAL  &kp PLUS  &kp ASTRK  &kp MINUS  &kp SLASH  &kp DQT
-&none   &trans     &kp TILDE  &trans    &kp LBRC  &kp RBRC   &kp DQT    &trans    &kp LBKT   &kp RBKT   &kp LT     &kp GT
-&none   &trans     &trans     &trans    &trans    &kp EQUAL  &trans     &trans    &trans     &trans     &trans     &trans
+&trans     &trans    &trans     &trans    &trans     &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans
+&kp GRAVE  &kp EXCL  &kp AT     &kp HASH  &kp DLLR   &kp CARET  &kp AMPS   &kp BSLH   &kp PIPE   &kp PRCNT  &trans  &trans  &kp UNDER
+&kp EQUAL  &kp LPAR  &kp RPAR   &kp APOS  &kp EQUAL  &kp PLUS   &kp ASTRK  &kp MINUS  &kp SLASH  &kp DQT    &none   &trans
+&kp TILDE  &trans    &kp LBRC   &kp RBRC  &kp DQT    &trans     &kp LBKT   &kp RBKT   &kp LT     &kp GT     &none   &trans  &trans
+&trans     &trans    &kp EQUAL  &trans    &trans     &trans     &trans     &trans     &trans
             >;
         };
 
         flock_layer {
             bindings = <
-&out OUT_BLE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
-&out OUT_USB  &bt BT_PRV    &bt BT_NXT    &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
-&trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&none         &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&none         &trans        &trans        &trans        &trans        &trans        &none   &trans  &trans  &trans  &trans  &trans
+&out OUT_BLE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans      &bt BT_CLR_ALL  &out OUT_USB
+&bt BT_PRV    &bt BT_NXT    &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &bt BT_CLR  &trans          &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &none       &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &none       &trans          &trans
+&trans        &trans        &trans        &none         &trans        &trans        &trans  &trans  &trans
             >;
         };
 
         game_layer {
             bindings = <
-&kp ESC         &kp N1   &kp N2             &kp N3           &kp N4     &kp N5     &kp N6  &kp N7        &kp N8  &kp N9     &kp N0   &kt LEFT_SHIFT
-&kp LEFT_SHIFT  &kp Q    &kp W              &kp E            &kp Q      &kp T      &kp Y   &kp U         &kp I   &kp O      &kp P    &trans
-&kp LEFT_SHIFT  &kp A    &kp S              &kp D            &kp F      &kp G      &kp H   &kp J         &kp K   &kp L      &trans   &trans
-&kp LCTRL       &kp TAB  &kp Z              &kp X            &kp SPACE  &kp SPACE  &kp B   &kp N         &kp M   &kp COMMA  &kp DOT  &kp FSLH
-&trans          &trans   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp SPACE  &kp SPACE  &trans  &kp LEFT_ALT  &trans  &trans     &trans   &tog 6
+&kp ESC          &kp N1     &kp N2     &kp N3     &kp N4        &kp N5  &kp N6  &kp N7     &kp N8   &kp N9    &kp N0     &kt LEFT_SHIFT  &kp LEFT_SHIFT
+&kp Q            &kp W      &kp E      &kp Q      &kp T         &kp Y   &kp U   &kp I      &kp O    &kp P     &trans     &kp LEFT_SHIFT  &kp A
+&kp S            &kp D      &kp F      &kp G      &kp H         &kp J   &kp K   &kp L      &trans   &trans    &kp LCTRL  &kp TAB
+&kp Z            &kp X      &kp SPACE  &kp SPACE  &kp B         &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans     &trans          &kp C_VOLUME_DOWN
+&kp C_VOLUME_UP  &kp SPACE  &kp SPACE  &trans     &kp LEFT_ALT  &trans  &trans  &trans     &tog 6
             >;
         };
 
         mac_default {
             bindings = <
-&kp ESC        &kp N1        &kp N2                      &kp N3                 &kp N4      &kp N5      &kp N6  &kp N7          &kp N8            &kp N9           &kp N0               &kp C_PLAY_PAUSE
-&kp TAB        &kp Q         &kp W                       &kp E                  &kp R       &kp T       &kp Y   &kp U           &kp I             &kp O            &kp P                &kp MINUS
-&mt LGUI CAPS  &hm LCTRL A   &hm LEFT_ALT S              &hm LEFT_SHIFT D       &hm LGUI F  &kp G       &kp H   &hm LEFT_GUI J  &hm LEFT_SHIFT K  &hm LEFT_ALT L   &hm LCTRL SEMICOLON  &kp SQT
-&none          &kp LSHFT     &kp Z                       &kp X                  &kp C       &kp V       &kp B   &kp N           &kp M             &kp COMMA        &kp DOT              &kp FSLH
-&none          &kp LEFT_GUI  &mt LEFT_ALT C_VOLUME_DOWN  &mt LCTRL C_VOLUME_UP  &lt 1 DEL   &lt 2 BSPC  &none   &lt 3 ENTER     &lt 4 SPACE       &lt 2 RIGHT_ALT  &lt 5 LEFT           &kp RIGHT
+&kp ESC                &kp N1            &kp N2      &kp N3  &kp N4       &kp N5          &kp N6            &kp N7          &kp N8               &kp N9    &kp N0     &kp C_PLAY_PAUSE  &kp TAB
+&kp Q                  &kp W             &kp E       &kp R   &kp T        &kp Y           &kp U             &kp I           &kp O                &kp P     &kp MINUS  &mt LGUI CAPS     &hm LCTRL A
+&hm LEFT_ALT S         &hm LEFT_SHIFT D  &hm LGUI F  &kp G   &kp H        &hm LEFT_GUI J  &hm LEFT_SHIFT K  &hm LEFT_ALT L  &hm LCTRL SEMICOLON  &kp SQT   &none      &kp LSHFT
+&kp Z                  &kp X             &kp C       &kp V   &kp B        &kp N           &kp M             &kp COMMA       &kp DOT              &kp FSLH  &none      &kp LEFT_GUI      &mt LEFT_ALT C_VOLUME_DOWN
+&mt LCTRL C_VOLUME_UP  &lt 1 DEL         &lt 2 BSPC  &none   &lt 3 ENTER  &lt 4 SPACE     &lt 2 RIGHT_ALT   &lt 5 LEFT      &kp RIGHT
             >;
         };
     };
