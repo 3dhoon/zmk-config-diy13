@@ -62,11 +62,11 @@
 
         func_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &none   &trans  &trans  &trans  &none   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans
+&trans  &trans  &trans  &none   &trans  &trans  &trans  &none   &kp LS(LG(S))  &trans  &trans  &trans
             >;
         };
 
@@ -74,7 +74,7 @@
             bindings = <
 &trans  &trans     &trans    &trans    &trans    &trans    &trans     &trans    &trans    &trans     &trans     &trans     &trans
 &trans  &kp GRAVE  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp CARET  &kp AMPS  &kp BSLH  &kp PIPE   &kp PRCNT  &trans     &trans
-&trans  &trans     &trans    &kp LPAR  &kp RPAR  &kp APOS  &kp EQUAL  &kp PLUS  &kp STAR  &kp MINUS  &kp SLASH  &kp SQT
+&trans  &kp UNDER  &trans    &kp LPAR  &kp RPAR  &kp APOS  &kp EQUAL  &kp PLUS  &kp STAR  &kp MINUS  &kp SLASH  &kp SQT
 &trans  &kp TILDE  &trans    &kp LBRC  &kp RBRC  &trans    &trans     &kp LBKT  &kp RBKT  &kp LT     &kp GT     &kp QMARK
 &trans  &trans     &trans    &none     &trans    &trans    &trans     &none     &trans    &trans     &trans     &trans
             >;
