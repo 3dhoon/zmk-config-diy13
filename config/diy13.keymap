@@ -42,51 +42,51 @@
 
         number_layer {
             bindings = <
-&trans        &kp F1          &kp F2     &kp F3  &kp F4      &kp F5       &kp F6    &kp F7  &kp F8    &kp F9    &kp F10   &kp F11    &kp F12
-&trans        &trans          &kp F7     &kp F8  &kp F9      &trans       &trans    &kp N7  &kp N8    &kp N9    &trans    &trans     &trans
-&trans        &trans          &kp F4     &kp F5  &kp F6      &trans       &trans    &kp N4  &kp N5    &kp N6    &trans    &trans
-&trans        &trans          &kp F1     &kp F2  &kp F3      &trans       &trans    &kp N1  &kp N2    &kp N3    &trans    &trans
-&trans        &trans          &trans     &none   &trans      &trans       &kp N0    &none   &trans    &trans    &trans    &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &kp F7  &kp F8  &kp F9  &trans  &trans  &kp N7  &kp N8  &kp N9  &trans   &trans   &trans
+&trans  &trans  &kp F4  &kp F5  &kp F6  &trans  &trans  &kp N4  &kp N5  &kp N6  &trans   &trans
+&trans  &trans  &kp F1  &kp F2  &kp F3  &trans  &trans  &kp N1  &kp N2  &kp N3  &trans   &trans
+&trans  &trans  &trans  &none   &trans  &trans  &kp N0  &none   &trans  &trans  &trans   &trans
             >;
         };
 
         nav_layer {
             bindings = <
-&trans        &trans          &trans          &trans            &trans       &trans       &trans       &trans        &trans      &trans         &trans    &trans        &trans 
-&trans        &trans          &trans          &trans            &trans       &trans       &trans       &kp LC(LEFT)  &kp UP      &kp LC(RIGHT)  &trans    &trans        &trans
-&trans        &trans          &trans          &trans            &trans       &trans       &kp HOME     &kp LEFT      &kp DOWN    &kp RIGHT      &trans    &trans
-&trans        &trans          &trans          &trans            &trans       &trans       &trans       &trans        &trans      &trans         &trans    &trans
-&trans        &trans          &trans          &none             &trans       &trans       &trans       &none         &trans      &trans         &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans    &trans         &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp LEFT      &kp DOWN  &kp RIGHT      &kp END  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans    &trans         &trans   &trans
+&trans  &trans  &trans  &none   &trans  &trans  &trans    &none         &trans    &trans         &trans   &trans
             >;
         };
 
         func_layer {
             bindings = <
-&trans        &trans          &trans          &trans            &trans       &trans       &trans       &trans        &trans      &trans         &trans    &trans        &trans 
-&trans        &trans          &trans          &trans            &trans       &trans       &trans       &trans        &trans      &trans         &trans    &trans        &trans 
-&trans        &trans          &trans          &trans            &trans       &trans       &trans       &trans        &trans      &trans         &trans    &trans
-&trans        &trans          &trans          &trans            &trans       &trans       &trans       &trans        &trans      &trans         &trans    &trans
-&trans        &trans          &trans          &none             &trans       &trans       &trans       &none         &trans      &trans         &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &none   &trans  &trans  &trans  &none   &trans  &trans  &trans  &trans
             >;
         };
 
         symbol_layer {
             bindings = <
-&trans        &trans          &trans          &trans            &trans       &trans       &trans       &trans        &trans      &trans         &trans     &trans        &trans 
-&trans        &kp GRAVE       &kp EXCL        &kp AT            &kp HASH     &kp DLLR     &kp CARET    &kp AMPS      &kp BSLH    &kp PIPE       &kp PRCNT  &kp LBKT      &kp RBKT
-&trans        &hm LEFT_GUI A  &hm LEFT_ALT S  &kp LPAR          &kp RPAR     &kp APOS     &trans       &kp PLUS      &kp STAR    &kp MINUS      &kp SLASH  &kp SQT
-&trans        &kp TILDE       &trans          &kp LBRC          &kp RBRC     &trans       &trans       &kp LBKT      &kp RBKT    &kp LT         &kp GT     &kp QMARK
-&trans        &trans          &trans          &none             &trans       &trans       &trans       &none         &trans      &trans         &trans     &trans
+&trans  &trans     &trans    &trans    &trans    &trans    &trans     &trans    &trans    &trans     &trans     &trans     &trans
+&trans  &kp GRAVE  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp CARET  &kp AMPS  &kp BSLH  &kp PIPE   &kp PRCNT  &trans     &trans
+&trans  &trans     &trans    &kp LPAR  &kp RPAR  &kp APOS  &kp EQUAL  &kp PLUS  &kp STAR  &kp MINUS  &kp SLASH  &kp SQT
+&trans  &kp TILDE  &trans    &kp LBRC  &kp RBRC  &trans    &trans     &kp LBKT  &kp RBKT  &kp LT     &kp GT     &kp QMARK
+&trans  &trans     &trans    &none     &trans    &trans    &trans     &none     &trans    &trans     &trans     &trans
             >;
         };
 
         flock_layer {
             bindings = <
-&trans        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &trans       &trans        &trans      &trans         &trans    &bt BT_CLR    &bt BT_CLR_ALL
-&trans        &trans          &trans          &trans            &trans        &trans        &trans       &trans        &trans      &trans         &trans    &trans        &trans 
-&trans        &trans          &trans          &trans            &trans        &trans        &trans       &trans        &trans      &trans         &trans    &trans
-&trans        &trans          &trans          &trans            &trans        &trans        &trans       &trans        &trans      &trans         &trans    &trans
-&trans        &trans          &trans          &none             &trans        &trans        &trans       &none         &bt BT_PRV  &kp DOWN       &kp UP    &bt BT_NXT
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans      &trans  &trans  &bt BT_CLR  &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans  &trans  &trans      &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans  &trans  &trans
+&trans  &trans        &trans        &none         &trans        &trans        &trans  &none   &bt BT_PRV  &trans  &trans  &bt BT_NXT
             >;
         };
     };
