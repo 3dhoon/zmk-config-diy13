@@ -33,11 +33,13 @@
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <54 56>;
+            layers = <0>;
         };
 
         language {
             bindings = <&kp RALT>;
             key-positions = <56 55>;
+            layers = <0>;
         };
     };
 
