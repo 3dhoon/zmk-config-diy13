@@ -30,12 +30,6 @@
     combos {
         compatible = "zmk,combos";
 
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <54 56>;
-            layers = <0>;
-        };
-
         language {
             bindings = <&kp RALT>;
             key-positions = <56 55>;
@@ -88,11 +82,11 @@
 
         symbol_layer {
             bindings = <
-&trans  &trans     &trans    &trans    &trans    &trans    &trans     &trans    &trans    &trans     &trans     &trans     &trans
-&trans  &kp GRAVE  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp CARET  &kp AMPS  &kp BSLH  &kp PIPE   &kp PRCNT  &trans     &trans
-&trans  &kp UNDER  &trans    &kp LPAR  &kp RPAR  &kp APOS  &kp EQUAL  &kp PLUS  &kp STAR  &kp MINUS  &kp SLASH  &kp SQT
-&trans  &kp TILDE  &trans    &kp LBRC  &kp RBRC  &trans    &trans     &kp LBKT  &kp RBKT  &kp LT     &kp GT     &kp QMARK
-&trans  &trans     &trans    &none     &trans    &trans    &trans     &none     &trans    &trans     &trans     &trans
+&trans  &trans     &trans    &trans    &trans     &trans    &trans     &trans    &trans    &trans     &trans     &trans     &trans
+&trans  &kp GRAVE  &kp EXCL  &kp AT    &kp HASH   &kp DLLR  &kp CARET  &kp AMPS  &kp BSLH  &kp PIPE   &kp PRCNT  &trans     &trans
+&trans  &kp UNDER  &trans    &kp LPAR  &kp RPAR   &kp APOS  &kp EQUAL  &kp PLUS  &kp STAR  &kp MINUS  &kp SLASH  &kp SQT
+&trans  &kp TILDE  &trans    &kp LBRC  &kp RBRC   &trans    &trans     &kp LBKT  &kp RBKT  &kp LT     &kp GT     &kp QMARK
+&trans  &trans     &trans    &none     &kp EQUAL  &trans    &trans     &none     &trans    &trans     &trans     &trans
             >;
         };
 
