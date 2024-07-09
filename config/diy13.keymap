@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 #define QUICK_TAP_MS 175
 
@@ -33,61 +32,61 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp N1          &kp N2           &kp N3            &kp N4       &kp N5       &kp N6         &kp N7            &kp N8            &kp N9           &kp N0           &kp C_VOL_DN    &kp C_VOLUME_UP
-&kp TAB         &kp Q           &kp W            &kp E             &kp R        &kp T        &kp Y          &kp U             &kp I             &kp O            &kp P            &kp LBKT        &kp RBKT
-&kp LCTRL       &hm LEFT_GUI A  &hm LEFT_ALT S   &hm LEFT_SHIFT D  &hm LCTRL F  &kp G        &kp H          &hm LCTRL J       &hm LEFT_SHIFT K  &kp L            &kp SEMI         &kp SQT
-&kp LSHFT       &kp Z           &kp X            &kp C             &kp V        &kp B        &kp N          &kp M             &kp COMMA         &kp DOT          &kp FSLH         &kp C_PP
-&kp LEFT_GUI    &kp LALT        &lt 1 DEL        &none             &lt 2 BSPC   &lt 3 ENTER  &lt 4 SPACE    &none             &kp LEFT          &kp DOWN         &kp UP           &kp RIGHT
+&kp ESC       &kp N1          &kp N2          &kp N3            &kp N4       &kp N5       &kp N6       &kp N7       &kp N8            &kp N9    &kp N0    &kp C_VOL_DN        &kp C_VOLUME_UP
+&kp TAB       &kp Q           &kp W           &kp E             &kp R        &kp T        &kp Y        &kp U        &kp I             &kp O     &kp P     &kp LBKT            &kp RBKT
+&kp LCTRL     &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G        &kp H        &hm LCTRL J  &hm LEFT_SHIFT K  &kp L     &kp SEMI  &kp SQT
+&kp LSHFT     &kp Z           &kp X           &kp C             &kp V        &kp B        &kp N        &kp M        &kp COMMA         &kp DOT   &kp FSLH  &lt 5 C_PLAY_PAUSE
+&kp LEFT_GUI  &kp LALT        &lt 1 DEL       &none             &lt 2 BSPC   &lt 3 ENTER  &lt 4 SPACE  &none        &kp LEFT          &kp DOWN  &kp UP    &kp RIGHT
             >;
         };
 
         number_layer {
             bindings = <
-&kp ESC         &kp N1          &kp N2           &kp N3            &kp N4       &kp N5       &kp N6         &kp N7            &kp N8            &kp N9           &kp N0           &kp C_VOL_DN    &kp C_VOLUME_UP
-&kp TAB         &kp Q           &kp W            &kp E             &kp R        &kp T        &kp Y          &kp U             &kp I             &kp O            &kp P            &kp LBKT        &kp RBKT
-&kp LCTRL       &hm LEFT_GUI A  &hm LEFT_ALT S   &hm LEFT_SHIFT D  &hm LCTRL F  &kp G        &kp H          &hm LCTRL J       &hm LEFT_SHIFT K  &kp L            &kp SEMI         &kp SQT
-&kp LSHFT       &kp Z           &kp X            &kp C             &kp V        &kp B        &kp N          &kp M             &kp COMMA         &kp DOT          &kp FSLH         &kp C_PP
-&kp LEFT_GUI    &kp LALT        &lt 1 DEL        &none             &lt 2 BSPC   &lt 3 ENTER  &lt 4 SPACE    &none             &kp LEFT          &kp DOWN         &kp UP           &kp RIGHT
+&trans        &kp F1          &kp F2     &kp F3  &kp F4      &kp F5       &kp F6    &kp F7  &kp F8    &kp F9    &kp F10   &kp F11    &kp F12
+&kp TAB       &kp Q           &kp F7     &kp F8  &kp F9      &kp T        &kp Y     &kp N7  &kp N8    &kp N9    &kp P     &kp LBKT   &kp RBKT
+&kp LCTRL     &hm LEFT_GUI A  &kp F4     &kp F5  &kp F6      &kp G        &kp HOME  &kp N4  &kp N5    &kp N6    &kp END   &kp SQT
+&kp LSHFT     &kp Z           &kp F1     &kp F2  &kp F3      &kp B        &kp N     &kp N1  &kp N2    &kp N3    &kp FSLH  &kp C_PP
+&kp LEFT_GUI  &kp LALT        &lt 1 DEL  &none   &lt 2 BSPC  &lt 3 ENTER  &kp N0    &none   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
             >;
         };
 
         nav_layer {
             bindings = <
-&kp ESC         &kp N1          &kp N2           &kp N3            &kp N4       &kp N5       &kp N6         &kp N7            &kp N8            &kp N9           &kp N0           &kp C_VOL_DN    &kp C_VOLUME_UP
-&kp TAB         &kp Q           &kp W            &kp E             &kp R        &kp T        &kp Y          &kp U             &kp I             &kp O            &kp P            &kp LBKT        &kp RBKT
-&kp LCTRL       &hm LEFT_GUI A  &hm LEFT_ALT S   &hm LEFT_SHIFT D  &hm LCTRL F  &kp G        &kp H          &hm LCTRL J       &hm LEFT_SHIFT K  &kp L            &kp SEMI         &kp SQT
-&kp LSHFT       &kp Z           &kp X            &kp C             &kp V        &kp B        &kp N          &kp M             &kp COMMA         &kp DOT          &kp FSLH         &kp C_PP
-&kp LEFT_GUI    &kp LALT        &lt 1 DEL        &none             &lt 2 BSPC   &lt 3 ENTER  &lt 4 SPACE    &none             &kp LEFT          &kp DOWN         &kp UP           &kp RIGHT
+&kp ESC       &kp N1          &kp N2          &kp N3            &kp N4       &kp N5       &kp N6       &kp N7        &kp N8     &kp N9         &kp N0    &kp C_VOL_DN  &kp C_VOLUME_UP
+&kp TAB       &kp Q           &kp W           &kp E             &kp R        &kp T        &kp Y        &kp LC(LEFT)  &kp UP     &kp LC(RIGHT)  &kp P     &kp LBKT      &kp RBKT
+&kp LCTRL     &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G        &kp HOME     &kp LEFT      &kp DOWN   &kp RIGHT      &kp END   &kp SQT
+&kp LSHFT     &kp Z           &kp X           &kp C             &kp V        &kp B        &kp N        &kp M         &kp COMMA  &kp DOT        &kp FSLH  &kp C_PP
+&kp LEFT_GUI  &kp LALT        &lt 1 DEL       &none             &lt 2 BSPC   &lt 3 ENTER  &lt 4 SPACE  &none         &kp LEFT   &kp DOWN       &kp UP    &kp RIGHT
             >;
         };
 
         func_layer {
             bindings = <
-&kp ESC         &kp N1          &kp N2           &kp N3            &kp N4       &kp N5       &kp N6         &kp N7            &kp N8            &kp N9           &kp N0           &kp C_VOL_DN    &kp C_VOLUME_UP
-&kp TAB         &kp Q           &kp W            &kp E             &kp R        &kp T        &kp Y          &kp U             &kp I             &kp O            &kp P            &kp LBKT        &kp RBKT
-&kp LCTRL       &hm LEFT_GUI A  &hm LEFT_ALT S   &hm LEFT_SHIFT D  &hm LCTRL F  &kp G        &kp H          &hm LCTRL J       &hm LEFT_SHIFT K  &kp L            &kp SEMI         &kp SQT
-&kp LSHFT       &kp Z           &kp X            &kp C             &kp V        &kp B        &kp N          &kp M             &kp COMMA         &kp DOT          &kp FSLH         &kp C_PP
-&kp LEFT_GUI    &kp LALT        &lt 1 DEL        &none             &lt 2 BSPC   &lt 3 ENTER  &lt 4 SPACE    &none             &kp LEFT          &kp DOWN         &kp UP           &kp RIGHT
+&kp ESC       &kp N1          &kp N2          &kp N3            &kp N4       &kp N5       &kp N6       &kp N7       &kp N8            &kp N9    &kp N0    &kp C_VOL_DN  &kp C_VOLUME_UP
+&kp TAB       &kp Q           &kp W           &kp E             &kp R        &kp T        &kp Y        &kp U        &kp I             &kp O     &kp P     &kp LBKT      &kp RBKT
+&kp LCTRL     &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G        &kp H        &hm LCTRL J  &hm LEFT_SHIFT K  &kp L     &kp SEMI  &kp SQT
+&kp LSHFT     &kp Z           &kp X           &kp C             &kp V        &kp B        &kp N        &kp M        &kp COMMA         &kp DOT   &kp FSLH  &kp C_PP
+&kp LEFT_GUI  &kp LALT        &lt 1 DEL       &none             &lt 2 BSPC   &lt 3 ENTER  &lt 4 SPACE  &none        &kp LEFT          &kp DOWN  &kp UP    &kp RIGHT
             >;
         };
 
         symbol_layer {
             bindings = <
-&kp ESC         &kp N1          &kp N2           &kp N3            &kp N4       &kp N5       &kp N6         &kp N7            &kp N8            &kp N9           &kp N0           &kp C_VOL_DN    &kp C_VOLUME_UP
-&kp TAB         &kp Q           &kp W            &kp E             &kp R        &kp T        &kp Y          &kp U             &kp I             &kp O            &kp P            &kp LBKT        &kp RBKT
-&kp LCTRL       &hm LEFT_GUI A  &hm LEFT_ALT S   &hm LEFT_SHIFT D  &hm LCTRL F  &kp G        &kp H          &hm LCTRL J       &hm LEFT_SHIFT K  &kp L            &kp SEMI         &kp SQT
-&kp LSHFT       &kp Z           &kp X            &kp C             &kp V        &kp B        &kp N          &kp M             &kp COMMA         &kp DOT          &kp FSLH         &kp C_PP
-&kp LEFT_GUI    &kp LALT        &lt 1 DEL        &none             &lt 2 BSPC   &lt 3 ENTER  &lt 4 SPACE    &none             &kp LEFT          &kp DOWN         &kp UP           &kp RIGHT
+&trans        &kp N1          &kp N2          &kp N3    &kp N4     &kp N5       &kp N6       &kp N7    &kp N8    &kp N9     &kp N0     &kp C_VOL_DN  &kp C_VOLUME_UP
+&kp TAB       &kp GRAVE       &kp EXCL        &kp AT    &kp HASH   &kp DLLR     &kp CARET    &kp AMPS  &kp I     &kp PIPE   &kp PRCNT  &kp LBKT      &kp RBKT
+&kp LCTRL     &hm LEFT_GUI A  &hm LEFT_ALT S  &kp LPAR  &kp RPAR   &kp APOS     &kp H        &kp PLUS  &kp STAR  &kp MINUS  &kp SLASH  &kp SQT
+&kp LSHFT     &kp TILDE       &kp X           &kp LBRC  &kp RBRC   &kp B        &kp N        &kp LBKT  &kp RBKT  &kp LT     &kp GT     &kp QMARK
+&kp LEFT_GUI  &kp LALT        &lt 1 DEL       &none     &kp EQUAL  &lt 3 ENTER  &lt 4 SPACE  &none     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
             >;
         };
 
         flock_layer {
             bindings = <
-&kp ESC         &kp N1          &kp N2           &kp N3            &kp N4       &kp N5       &kp N6         &kp N7            &kp N8            &kp N9           &kp N0           &kp C_VOL_DN    &kp C_VOLUME_UP
-&kp TAB         &kp Q           &kp W            &kp E             &kp R        &kp T        &kp Y          &kp U             &kp I             &kp O            &kp P            &kp LBKT        &kp RBKT
-&kp LCTRL       &hm LEFT_GUI A  &hm LEFT_ALT S   &hm LEFT_SHIFT D  &hm LCTRL F  &kp G        &kp H          &hm LCTRL J       &hm LEFT_SHIFT K  &kp L            &kp SEMI         &kp SQT
-&kp LSHFT       &kp Z           &kp X            &kp C             &kp V        &kp B        &kp N          &kp M             &kp COMMA         &kp DOT          &kp FSLH         &kp C_PP
-&kp LEFT_GUI    &kp LALT        &lt 1 DEL        &none             &lt 2 BSPC   &lt 3 ENTER  &lt 4 SPACE    &none             &kp LEFT          &kp DOWN         &kp UP           &kp RIGHT
+&trans        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &trans       &kp N7       &kp N8            &kp N9    &kp N0    &bt BT_CLR  &bt BT_CLR_ALL
+&kp TAB       &kp Q           &kp W           &kp E             &kp R         &kp T         &kp Y        &kp U        &kp I             &kp O     &kp P     &kp LBKT    &kp RBKT
+&kp LCTRL     &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F   &kp G         &kp H        &hm LCTRL J  &hm LEFT_SHIFT K  &kp L     &kp SEMI  &kp SQT
+&kp LSHFT     &kp Z           &kp X           &kp C             &kp V         &kp B         &kp N        &kp M        &kp COMMA         &kp DOT   &kp FSLH  &kp C_PP
+&kp LEFT_GUI  &kp LALT        &lt 1 DEL       &none             &lt 2 BSPC    &lt 3 ENTER   &lt 4 SPACE  &none        &bt BT_PRV        &kp DOWN  &kp UP    &bt BT_NXT
             >;
         };
     };
